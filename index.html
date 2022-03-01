@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erkan`s calculator</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: none;
+        }
+        .title{
+            color:white;
+            font-size:4rem;
+            letter-spacing: 3px;
+        }
+        input{
+            border:none;
+            color:#333;
+            padding:5px 10px;
+            border-radius: 5px;
+            background: #ededed;
+            width:200px;
+            height:30px;
+            text-align: center;
+            font-size:1rem;
+            letter-spacing: -0.5px;
+            border: 2px solid transparent;
+
+        }
+        .container{
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            background: linear-gradient(to right,blue,rgb(64, 64, 250));
+
+        }
+        button{
+            color: blue;
+            background-color: white;
+            width: 120px ;
+            height: 35px;
+            border-radius: 2rem;
+            font-weight: 600;
+            border:none;
+            margin-top: 15px;
+            font-size: 18px;
+            
+        }
+        #sonuc::before{
+            content:"sonuc-->";
+        }
+        .title:hover{
+            transition: 0.6s;
+            letter-spacing: 5px;
+        }
+        input:hover{
+            transition: 0.3s ease-in-out;
+            color: wheat;
+            background-color: gray;
+            border: 2px solid black;
+
+        }
+        button:hover{
+            transition: 0.3s ease-in-out;
+            color:white;
+            background-color: blue;
+            border:1px solid #fff;
+            cursor:pointer;
+        }
+        #sonuc{
+            color:#ededed;
+            margin-top:20px;
+            font-weight: 900;
+            font-size:2rem;
+            letter-spacing: 5px;
+            border:2px solid #fff;
+            padding:5px;
+            border-radius: 2rem;
+        }
+
+    </style>
+</head>
+
+
+<body>
+    <div class="container">
+    
+    <div class="title"> Erkan`s calculator </div>
+    <div>
+        <input type="input" id="number1" placeholder="sayi girin"/>
+        <input type="input" id="number2" placeholder="2. sayi girin"/>
+        <br/>
+        <button id="topla" type="button">topla</button>
+        <button id="carp">carp</button>
+        <button id="bol">bol</button>
+        <button id="cikar">cikar</button>
+        <div id="sonuc">0</div>   
+     </div>
+    </div>
+ 
+    <script src="./basiccal.js"></script>
+</body>
+</html>
